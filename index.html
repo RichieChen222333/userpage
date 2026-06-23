@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人首頁</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <style>
+        :root {
+            /* ===== Brand ===== */
+            --color-primary: #3b82f6;
+            --color-primary-hover: #2563eb;
+            --color-secondary: #14b8a6;
+            --color-accent: #8b5cf6;
+
+            /* ===== Background ===== */
+            --bg-main: #0f172a;
+            --bg-secondary: #1e293b;
+            --bg-card: #1f2937;
+            --bg-card-hover: #334155;
+
+            /* ===== Hero / Banner ===== */
+            --bg-hero-overlay: rgba(15, 23, 42, 0.75);
+
+            /* ===== Text ===== */
+            --text-primary: #f8fafc;
+            --text-secondary: #cbd5e1;
+            --text-muted: #94a3b8;
+            --text-inverse: #0f172a;
+
+            /* ===== Border ===== */
+            --border-color: #334155;
+            --border-light: #475569;
+
+            /* ===== Status ===== */
+            --success: #22c55e;
+            --warning: #f59e0b;
+            --danger: #ef4444;
+            --info: #06b6d4;
+
+            /* ===== Tag / Skill ===== */
+            --tag-bg: rgba(59, 130, 246, 0.15);
+            --tag-text: #60a5fa;
+
+            /* ===== Button ===== */
+            --btn-primary-bg: var(--color-primary);
+            --btn-primary-text: #ffffff;
+            --btn-secondary-bg: transparent;
+            --btn-secondary-text: var(--text-primary);
+
+            /* ===== Shadow ===== */
+            --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.2);
+            --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.3);
+            --shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.4);
+
+            /* ===== Gradient ===== */
+            --gradient-primary: linear-gradient(135deg,
+                    #3b82f6 0%,
+                    #14b8a6 100%);
+
+            --gradient-hero: linear-gradient(135deg,
+                    #0f172a 0%,
+                    #1e293b 50%,
+                    #0f766e 100%);
+        }
+
+        body{
+            background-color: var(--bg-main);
+        }
+
+        /* s01 */
+        .s01{
+            background-color: var(--bg-card);
+            height: 100vh;
+            position: relative;
+        }
+        .s01 .box01{
+            width: 200px;
+            height: 200px;
+            background-color: var(--color-accent);
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .s01 .box02{
+            width: 200px;
+            height: 200px;
+            background-color: var(--color-accent);
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        .s01 .box03{
+            width: 200px;
+            height: 200px;
+            background-color: var(--color-accent);
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+        .s01 .box04{
+            width: 200px;
+            height: 200px;
+            background-color: var(--color-accent);
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+        .s01 .userImg{
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            bottom: 100px;
+            right: 100px;
+            background-color: var(--danger);
+            background-image: url(images/user01.avif);
+            background-position: center center;
+            background-size: cover;
+            border-radius: 15px;
+            box-shadow: var(--shadow-md);
+        }
+        .userText{
+            position: absolute;
+            top: 30%;
+            left: 15%;
+            right: 60%;
+        }
+
+        /* S02作品區 */
+        .s02{
+            padding: 80px 10%;
+            background-color: var(--bg-main);
+            text-align: center;
+        }
+        .s02 h2{
+            font-size: 36px;
+        }
+
+        .s02 .card{
+            display: inline-block;
+            margin: 15px;
+            width: 240px;
+            background-color: var(--bg-card);
+            padding: 20px;
+            text-align: left;
+            border-radius: 12px;
+        }
+
+        .s02 .card h3{
+            color: var(--text-primary);
+            margin-top: 0;
+        }
+
+        .s02 .card p{
+            line-height: 1.7;
+            color: var(--text-secondary);
+        }
+
+        .s02 .card a{
+            background-color: var(--color-primary);
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            color: var(--text-primary);
+        }
+    </style>
+</head>
+
+<body>
+    <section class="s01">
+        <div class="box01"></div>
+        <div class="box02"></div>
+        <div class="box03"></div>
+        <div class="box04"></div>
+        <div class="userImg"></div>
+        <div class="userText">
+            <h1>王小明履歷</h1>
+            <hr>
+            <h2>應徵職位: 軟體工程師</h2>
+            <p>座右銘: 辦公室在我到達查看障礙實業手冊聯繫方式收費自信自信，的人傢伙效果而且廣泛，上了精品委員會，本帖新年。</p>
+        </div>
+    </section>
+    <section class="s02">
+        <h2>我的作品</h2>
+
+        <!-- 作品01 -->
+        <div class="card">
+            <h3>切版練習</h3>
+            <p>使用HTML，CSS練習切版。</p>
+            <a href="20260527-1.html" target="_blank">查看作品</a>
+        </div>
+
+        <!-- 作品 table 20260605 -->
+        <div class="card">
+            <h3>Table排版</h3>
+            <p>使用HTML，CSS，JavaScript製作展示頁面。</p>
+            <a href="20260605-ch5-ai01.html" target="_blank">查看作品</a>
+        </div>
+
+        <!-- 作品03 -->
+        <div class="card">
+            <h3>購物網站</h3>
+            <p>使用HTML，CSS，JavaScript製作展示頁面。</p>
+            <a href="#">查看作品</a>
+        </div>
+
+        <!-- 作品04 -->
+        <div class="card">
+            <h3>購物網站</h3>
+            <p>使用HTML，CSS，JavaScript製作展示頁面。</p>
+            <a href="#">查看作品</a>
+        </div>
+
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>切版練習</title>
+    <link rel="stylesheet" href="css/my.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <style>
+        body {
+            background-color: var(--background-secondary);
+            font-family: "Yusei Magic", sans-serif;
+        }
+
+        .wrapper {
+            width: 1024px;
+            margin: 0 auto;
+        }
+
+        .imgbox {
+            width: 1024px;
+            height: 200px;
+            background-color: var(--accent-color);
+
+            /* 背景圖 */
+            background-image: url(images/bus01.avif);
+            background-position: center center;
+            background-size: cover;
+        }
+
+        nav {
+            background-color: var(--primary-color);
+            text-align: center;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        nav ul {
+            display: inline-block;
+
+        }
+
+        nav ul li {
+            list-style-type: none;
+            float: left;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            display: block;
+            background-color: var(--secondary-color);
+            margin-right: 15px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-left: 20px;
+            padding-right: 20px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 2px 2px var(--button-secondary-hover);
+            transition: border-radius 1s, box-shadow 1s;
+            color: var(--text-light);
+        }
+
+        nav ul li a:hover {
+            border-radius: 20px;
+            box-shadow: 2px 2px 2px 2px var(--background-primary);
+            background-color: var(--button-secondary-hover);
+        }
+
+        .content {
+            background-color: var(--card-background);
+            text-align: center;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+        .content h1 {
+            color: var(--primary-color);
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            color: var(--text-primary);
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .content a {
+            display: block;
+            background-color: var(--button-primary);
+            width: 130px;
+            height: 40px;
+            margin: 0 auto;
+            text-decoration: none;
+            color: var(--text-light);
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 40px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 2px 2px var(--button-primary-hover);
+            transition: box-shadow 0.5s;
+        }
+
+        .content a:hover {
+            background-color: var(--button-primary-hover);
+            box-shadow: 2px 2px 2px 2px var(--secondary-color);
+        }
+
+        .footer {
+            background-color: var(--secondary-color);
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-top: 5px;
+        }
+
+        .footer p {
+            color: var(--text-light);
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        @media screen and (max-width: 1200px) and (min-width: 1025px) {
+            .imgbox {
+                background-image: url(images/bus02.avif);
+            }
+        }
+
+        @media screen and (max-width: 1024px) {
+            .wrapper {
+                width: 100%;
+            }
+
+            .imgbox {
+                width: 100%;
+                background-image: url(images/bus03.avif);
+                height: 140px;
+            }
+
+            nav ul {
+                display: block;
+                padding-left: 10px;
+                margin: 0;
+            }
+
+            nav ul li {
+                float: none;
+                margin-bottom: 10px;
+            }
+
+            nav ul li a {
+                background-color: var(--card-background);
+                color: var(--text-primary);
+            }
+
+            .content {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            .content p {
+                font-size: 18px;
+                line-height: 1.4;
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- #    id      .    class -->
+    <div class="wrapper">
+        <div class="banner">
+            <div class="imgbox"></div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="fw-900">
+                            <i class="fa-solid fa-house fa-1x btn-text-secondary"></i>首頁</a>
+                    </li>
+                    <li><a href="#">
+                            <i class="fa-solid fa-newspaper btn-text-secondary"></i>最新消息</a>
+                    </li>
+                    <li><a href="#">
+                            <i class="fa-solid fa-store btn-text-secondary"></i>合作店家</a>
+                    </li>
+                    <li><a href="#">
+                            <i class="fa-solid fa-info btn-text-secondary"></i>關於我們</a>
+                    </li>
+                    <li><a href="#">
+                            <i class="fa-solid fa-phone-flip btn-text-secondary"></i>聯絡我們</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="content">
+            <h1 class="fw-900">
+                <i class="fa-solid fa-handshake fa-4x" style="color: rgb(189, 183, 207);"></i>
+            </h1>
+            <p class="fw-500">
+                夏天說了前後強烈是的，賺錢有個設為電力疾病鮮花自然網上，部門互相媽媽落實站內是什麼輕輕上門選項可能會動漫，身後說過，廣播發言明顯指定招商章節上網學校存在說到目的台北，生產寂寞這麼多呵呵行動遵守，漢化。</p>
+            <p class="fw-500">
+                退出就不也沒日誌財產烏日多次傳來，有限責任公司成立買了創意就不出處你在面積，保存歐洲，此外只要，證明離線穩定旅遊答應金屬領域返回此處歌手表示激烈見過過來，商務這個問題大眾找到管理系統不見設定同時危險直接皇帝一時，感謝一副法院把我不在看著警方自行輔助失去，桌面判斷下載告知準確字體招商引進理由點頭高速，您的說出資訊網手指改變，招商新臺幣老婆好看女孩百姓兩種病毒，時尚房間內容簡介，事件透露加大好了國語。
+            </p>
+            <p class="fw-500">同事關鍵爆炸思路，應當常見運用而且也會類型速度也能大量全部求助電子郵件運動，說著目光一部分一次走出陷入，買賣遺憾女孩溫暖朋友越來越結果表明，各國說是接觸，一生。</p>
+            <a href="#">了解更多</a>
+        </div>
+        <div class="footer">
+            <p>PowerBy xxx.2026.05</p>
+        </div>
+    </div>
+</body>
+
+</html>
